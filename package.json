@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.js",
-    "lint": "eslint src -c .ts --fix"
+    "lint": "npx eslint src --fix",
+    "knex": "npx knex"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +14,15 @@
   "description": "",
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
+    "ts-node": "^10.9.2",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "fastify": "^5.3.0"
+    "dotenv": "^16.5.0",
+    "fastify": "^5.3.0",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.24.3"
   }
 }
